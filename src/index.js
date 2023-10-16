@@ -1,1 +1,4 @@
-console.log(`I'm working!`)
+import firstLoad from "./functions/firstLoad";
+import "./styles/style.css";
+
+firstLoad();
