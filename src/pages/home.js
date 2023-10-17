@@ -18,7 +18,7 @@ const loadHome = () => {
 	heroText.classList.add("hero-text");
 	const mainText = document.createElement("div");
 	mainText.classList.add("main-text");
-	mainText.innerText = "PANQUESITO";
+	mainText.innerText = "PANQUESITOS";
 	const descText = document.createElement("div");
 	descText.classList.add("desc-text");
 	descText.innerText = "fine dining by kagune";
