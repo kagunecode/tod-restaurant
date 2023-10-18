@@ -30,20 +30,21 @@ a:hover {
 }
 
 nav {
-	transition-duration: 500ms;
+	align-self: flex-end;
+	transition-duration: 1000ms;
 	transition-timing-function: ease-in-out;
 }
 
 .nav-home {
-	align-self: flex-end;
 	height: 6%;
-	position: absolute;
+	position: fixed;
 }
 
 .nav-secondary {
 	flex: 0;
 	height: 6%;
-	position: absolute;
+	padding-right: calc(100vw - 64%);
+	position: fixed;
 }
 
 ul {
@@ -96,4 +97,31 @@ ul {
 	color: #f1d8d8;
 	font-size: 2rem;
 	font-style: italic;
+}
+
+.menu-content {
+	padding-top: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	grid-auto-rows: 40%;
+	gap: 2rem;
+}
+
+.menu-card {
+	display: flex;
+	width: 80%;
+	height: 100%;
+	background-color: #f1d8d8;
+	border-radius: 1rem;
+	align-items: center;
+}
+
+.menu-img {
+	width: 50%;
+	height: 95%;
+	object-fit: cover;
+	padding-left: 0.5rem;
+	border-radius: 1rem;
 }
