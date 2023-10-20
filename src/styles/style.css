@@ -8,18 +8,19 @@ body {
 
 .content {
 	display: flex;
-	height: 100vh;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #333333;
 	position: relative;
+	height: 100vh;
 	font-family: "Montserrat", sans-serif;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
-	padding: 1rem;
+	padding: 0.5rem 1.5rem;
+	transition: background-color, color;
 	transition-duration: 0.3s;
 	font-family: "Montserrat", sans-serif;
 }
@@ -30,7 +31,7 @@ a:hover {
 }
 
 nav {
-	margin-top: 1rem;
+	padding-top: 1rem;
 	align-self: flex-end;
 	transition-duration: 1000ms;
 	transition-timing-function: ease-in-out;
@@ -107,7 +108,7 @@ ul {
 	justify-items: center;
 	align-items: center;
 	grid-auto-rows: 45%;
-	gap: 2rem;
+	gap: 1.5rem 0;
 }
 
 .menu-card {
@@ -133,7 +134,7 @@ ul {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 
 .menu-item-title {
@@ -147,6 +148,7 @@ ul {
 }
 
 .menu-item-price {
+	margin-top: 0;
 	font-size: 1.5rem;
 	font-weight: bold;
 }
