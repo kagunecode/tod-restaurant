@@ -2,6 +2,7 @@ import firstLoad from "./functions/firstLoad";
 import "./styles/style.css";
 import cleanPage from "./functions/erasePage";
 import navbarLoad from "./elements/navbar";
+import menuLoad from "./pages/menu";
 
 const content = document.querySelector(".content");
 
@@ -25,6 +26,7 @@ menuButton.addEventListener("click", () => {
 	const navbar = document.querySelector("nav");
 	navbar.classList.remove("nav-home");
 	navbar.classList.add("nav-secondary");
+	menuLoad();
 });
 
 aboutButton.addEventListener("click", () => {
